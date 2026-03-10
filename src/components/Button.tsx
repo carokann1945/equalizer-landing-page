@@ -11,9 +11,9 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const variantStyles: Record<ButtonVariant, string> = {
-  ios: 'w-full py-[16px] flex justify-center items-center bg-slate-custom typo-6 text-white hover:bg-cyan-custom hover:text-slate-custom transition-all duration-200 rounded-[12px] cursor-pointer',
+  ios: 'w-full py-[16px] flex justify-center items-center bg-slate-custom typo-6 text-white hover:bg-cyan-custom hover:text-slate-custom transition-all duration-150 rounded-[12px] cursor-pointer',
   android:
-    'w-full py-[16px] flex justify-center items-center bg-white typo-6 text-slate-custom hover:bg-yellow-custom transition-all duration-200 rounded-[12px] cursor-pointer',
+    'w-full py-[16px] flex justify-center items-center bg-white typo-6 text-slate-custom hover:bg-yellow-custom transition-all duration-150 rounded-[12px] cursor-pointer',
 };
 
 export default function Button({ variant = 'ios' }: ButtonProps) {

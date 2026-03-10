@@ -20,9 +20,9 @@ export default function Header() {
           <source media="(min-width: 768px)" srcSet={mainTablet} />
           <img
             src={mainMobile}
-            alt="bg"
+            alt="bg1"
             className={cn(
-              'max-w-none',
+              'max-w-[1800px]',
               'absolute top-[-150px] md:top-[-200px] right-[-560px] md:right-[-800px] xl:right-[-1470px]',
               '-z-10',
             )}
@@ -34,11 +34,11 @@ export default function Header() {
         <picture>
           <img
             src={pattern1}
-            alt="bg"
+            alt="bg2"
             className={cn(
               'max-w-none',
               'absolute top-[-40px] right-[-790px] xl:right-[-1271px]',
-              '-z-10',
+              '-z-9',
               'hidden md:block',
             )}
           />
