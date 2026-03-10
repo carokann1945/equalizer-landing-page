@@ -1,21 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
 @import 'tailwindcss';
 
-/* 3. 로컬 폰트 정의 (Pretendard) */
-@font-face {
-  font-family: 'Pretendard Variable';
-  font-weight: 45 920; /* 가변 폰트 굵기 범위 */
-  font-style: normal;
-  font-display: swap;
-  src: url('./assets/fonts/PretendardVariable.woff2') format('woff2');
-}
-
 @theme inline {
-  --font-notosanskr: 'Noto Sans KR', ui-sans-serif, system-ui, sans-serif;
-  --font-pretendard: 'Pretendard Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-ibm: 'IBM Plex Sans', sans-serif;
+  /* Primary Colors */
+  --color-cyan-custom: #66e2dc;
+  --color-orange-custom: #fa7453;
+  --color-yellow-custom: #ffb964;
+
+  /* Neutral & Dark Colors */
+  --color-white-custom: #fcfaf9;
+  --color-slate-custom: #191826;
 }
 
-/* 6. 전역 기본 폰트 적용 */
-body {
-  font-family: var(--font-pretendard);
+@utility main-mobile {
+  background-image: url('/images/bg-main-mobile.png');
+  background-position: top -150px right -220px;
+  background-repeat: no-repeat;
+}
+
+@utility main-tablet {
+  background-image: url('/images/bg-pattern-1.svg'), url('/images/bg-main-tablet.png');
+  background-position:
+    top -50px right -50px,
+    top -220px right -80px;
+  background-repeat: no-repeat, no-repeat;
+}
+
+/* 유틸리티 클래스 생성: 변수 사용 없이 수치 직접 입력 */
+@utility typo-1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  font-size: 88px;
+  line-height: 100%;
+  letter-spacing: -1px;
+}
+
+@utility typo-2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+@utility typo-3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+  letter-spacing: 0px;
+}
+
+@utility typo-4 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+@utility typo-5-bold {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+@utility typo-5 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+@utility typo-6 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0px;
 }
